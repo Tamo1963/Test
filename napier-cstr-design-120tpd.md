@@ -9,9 +9,9 @@
 
 ## 1. Executive summary
 
-- **Capacity:** 120 t/day fresh Napier grass (Pakchong 1-type) → **~150 m³/day slurry** at 12% TS → **4 × 1,500 m³ CSTR digesters in series (6,000 m³ working)** at 40-day HRT, mesophilic 37 °C.
+- **Capacity:** 120 t/day fresh Napier grass (Pakchong 1-type) → **~150 m³/day slurry** at 12% TS → **4 × 1,500 m³ CSTR digesters in series (≈5,900 m³ working, HRT ≈ 39–40 d)**, mesophilic 37 °C.
 - **Agitators:** scaled "Model 3" concept from the paper — **two downward-pumping 3-blade 45°-pitch axial propellers per tank (D = 5.0 m, D/T = 0.40) + 4 radial wall baffles**, ~43 kW per tank, 12 rpm, Re ≈ 4.8 × 10⁶ (fully turbulent), Froude ≈ 0.019 (no vortex).
-- **Expected output:** CH₄ **4,100–5,200 m³/d** (0.27–0.34 m³/kg VS, paper's CSTR range) → biogas **6,900–8,700 m³/d** → **3.0–3.7 t/d CBG** or **0.75–0.95 MWe** gross via CHP, net ~0.75–0.90 MWe.
+- **Expected output:** CH₄ **4,100–5,200 m³/d** (0.27–0.34 m³/kg VS, paper's CSTR range) → biogas **6,900–8,700 m³/d** → **3.0–3.7 t/d CBG** or **0.70–0.89 MWe** gross via CHP (~0.5–0.6 MWe net after plant parasitics).
 - **Key scale insight:** the lab's surface vortex problem disappears at industrial speed (Fr = n²D/g ≈ 0.02 ≪ 1); the *floating-rind problem is what must be engineered out* — solved by the upper propeller drawing the liquid surface downward aggressively, exactly as the paper's Model 3 does.
 
 ---
@@ -35,7 +35,7 @@
 
 | Stream | t/d | m³/d | Notes |
 |---|---|---|---|
-| Fresh grass in | 120.0 | ~139 | |
+| Fresh grass in | 120.0 | ~140 | |
 | Dilution water in | 30.0 | 30.0 | Condition feed to pumpable 12% TS |
 | Recycle/inoculum (start-up only) | — | — | First fill from seed digestate (2 × 1,500 m³) |
 | **Slurry to digesters** | **150.0** | **150.0** | 12% TS, 10.2% VS |
@@ -53,7 +53,7 @@ Paper's CSTR mono-digestion result: **0.27–0.34 L CH₄/g VS added** at OLR 1.
 | Biogas production (60% CH₄) | 6,885 m³/d | 8,670 m³/d | |
 | Thermal energy (CH₄ LHV 9.95 kWh/m³) | 41.1 MWh/d | 51.8 MWh/d | 1.71–2.16 MW<sub>th</sub> avg |
 | CBG output (after upgrade) | **3.0 t/d** | **3.7 t/d** | ρCH₄ = 0.716 kg/m³ |
-| CHP gross electrical (41% eff.) | 0.75 MWe | 0.95 MWe | |
+| CHP gross electrical (41% eff.) | 0.70 MWe | 0.89 MWe | |
 | Plant parasitic electric | ~0.15–0.25 MW | | Mixers + pumping + upgrading note |
 
 **Reconciliation note:** the Biofics Rajkot plant (120 t/d input → 5 t/d CBG) implies ~52 m³ CH₄/t fresh grass ≈ 0.29 L/g VS *plus co-digestion boost*. The paper's mono-digestion yields land at the low end — **co-digestion with poultry/cattle dung is identified as the yield-upgrade path to 5+ t/d**, consistent with our register findings (Rajkot, Botad).
@@ -181,7 +181,7 @@ Using standard axial-impeller correlations (Ruszkowski-type) with our geometry (
 | Mixing electric continuous 24/7 | 4 × 43 = 172 kW → 4.13 MWh/d | 5–10% of gross energy if continuous |
 | Option: intermittent duty (20 min/h) | ~55% of that = 2.3 MWh/d | Only with surface-tension scum monitoring in place |
 | Parasitic electric total (mixers, pumps, chopper, gas treatment, compression boost, lighting) | ~0.20–0.30 MW avg | |
-| Net CHP electric | **0.5–0.7 MWe** | After parasitics |
+| Net CHP electric | **0.5–0.6 MWe** | Gross 0.70–0.89 minus parasitics |
 
 ---
 
@@ -233,7 +233,7 @@ Using standard axial-impeller correlations (Ruszkowski-type) with our geometry (
 | Civil | 4 concrete digesters × 1,475 m³ + control buildings, 2 lagoons 3,500 m³ (45-d digestate), silage bunkers |
 | Mechanical | Agitator packages: 4 × (55 kW motor + ~125:1 planetary + 350 mm shaft + 2 × 5.0 m 3-blade SS impellers + pilaster baffles + anti-wrap plates + sparger) |
 | Feed | 2 × 40 t/h hammer-milling lines, hopper, 2 × hose pumps, 30 m³/d water module |
-| Biogas | 2 × 500 m³ holders, desulphurization (Fe dosing + carbon), cooler+dryer, 1,000 m³/h flare; alternatively VPSA/PSA upgrading to CBG (5 t/d class) or 1.1 MWe CHP |
+| Biogas | 2 × 500 m³ holders, desulphurization (Fe dosing + carbon), cooler+dryer, 1,000 m³/h flare; alternatively VPSA/PSA upgrading to CBG (3–4 t/d class) or 1.1 MWe CHP |
 | Instrumentation/controls | 4 × mixing panel, PLC/SCADA, methane safety loop |
 
 ## 12. References
