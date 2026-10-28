@@ -1,0 +1,8 @@
+streamlit>=1.40
+numpy
+scipy
+pandas
+plotly
+matplotlib
+python-docx
+pytest

@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "description": "Monod / ADM1 kinetic constant sets. Edit or add sets; the app also lets users override values per session.",
+    "units": {"k_m": "kg COD/kg COD/d", "K_S": "kg COD/m3 (K_S_IN, KI_nh3 in kmol/m3)", "Y": "kg COD/kg COD", "b": "1/d", "k_hyd": "1/d"}
+  },
+  "sets": {
+    "ADM1_BSM2_mesophilic": {
+      "label": "ADM1 / BSM2 mesophilic (35 C)",
+      "reference": "Batstone et al. (2002) IWA ADM1, Water Sci. Technol. 45(10):65-73; Rosen & Jeppsson (2006) Aspects on ADM1 implementation within the BSM2 framework, Lund Univ. (Tech. report)",
+      "T_ref_C": 35.0,
+      "theta": 1.05,
+      "uptake": {
+        "su":  {"k_m": 30, "K_S": 0.5,   "Y": 0.10, "b": 0.02, "label": "Sugar degraders"},
+        "aa":  {"k_m": 50, "K_S": 0.3,   "Y": 0.08, "b": 0.02, "label": "Amino-acid degraders"},
+        "fa":  {"k_m": 6,  "K_S": 0.4,   "Y": 0.06, "b": 0.02, "label": "LCFA degraders", "KI_h2": 5e-6},
+        "c4":  {"k_m": 20, "K_S": 0.2,   "Y": 0.06, "b": 0.02, "label": "Valerate/butyrate degraders", "KI_h2": 1e-5},
+        "pro": {"k_m": 13, "K_S": 0.1,   "Y": 0.04, "b": 0.02, "label": "Propionate degraders", "KI_h2": 3.5e-6},
+        "ac":  {"k_m": 8,  "K_S": 0.15,  "Y": 0.05, "b": 0.02, "label": "Acetoclastic methanogens", "KI_nh3": 0.0018},
+        "h2":  {"k_m": 35, "K_S": 7e-6,  "Y": 0.06, "b": 0.02, "label": "Hydrogenotrophic methanogens"}
+      },
+      "hydrolysis": {"k_dis": 0.5, "k_hyd_ch": 10, "k_hyd_pr": 10, "k_hyd_li": 10},
+      "K_S_IN": 1e-4,
+      "pH_limits": {"aa": [4.0, 5.5], "ac": [6.0, 7.0], "h2": [5.0, 6.0]},
+      "stoich": {
+        "f_sI_xc": 0.1, "f_ch_xc": 0.2, "f_pr_xc": 0.2, "f_li_xc": 0.3, "f_xI_xc": 0.2,
+        "f_fa_li": 0.95,
+        "f_bu_su": 0.13, "f_pro_su": 0.27, "f_ac_su": 0.41,
+        "f_va_aa": 0.23, "f_bu_aa": 0.26, "f_pro_aa": 0.05, "f_ac_aa": 0.40,
+        "f_ac_fa": 0.7, "f_pro_va": 0.54, "f_ac_va": 0.31, "f_ac_bu": 0.8, "f_ac_pro": 0.57
+      }
+    }
+  }
+}
